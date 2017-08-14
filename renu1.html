@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href="style1.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="container">
+        <h1>Move</h1>
+        <p>Form healthy habits to take your fitness to the next level.</p>
+        <a class="btn" href="#">Start Now</a>
+      </div>
+    </div>
+	
+	
+	<div class="mySlide">
+	
+	<img class="mySlides" src="https://www.universetoday.com/wp-content/uploads/2008/07/3.32.png">
+	<img class="mySlides" src="https://i.ytimg.com/vi/7t099KIWVVs/maxresdefault.jpg">
+	<img class="mySlides" src="http://cdn.images.express.co.uk/img/dynamic/151/590x/secondary/solar-system-448372.jpg">
+	<img class="mySlides" src="https://image.shutterstock.com/z/stock-vector-vector-solar-system-73943629.jpg">
+	
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			x[slideIndex-1].style.display = "block"; 
+		}
+	</script>
+	</div>
+	
+	
+	
+
+    <div class="supporting">
+      <div class="container">
+        <div class="col">
+          <h2>Move</h2>
+          <p>Become more active by tracking your runs, rides, and walks.</p>
+        </div>
+        <div class="col">
+          <h2>Sync</h2>
+          <p>Access your activity on your phone, tablet, or computer.</p>
+        </div>
+        <div class="col">
+          <h2>Compete</h2>
+          <p>Set personal challenges and see how you rank against your friends.</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="container">
+        <h2>Move. Rest. Recover. Move.</h2>
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+        <h2>Go Premium</h2>
+        <p>Receive recommendations based on your activity to level up.</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <h2>Stop scrolling. Start moving.</h2>
+        <a class="btn" href="#">Start Now</a>
+      </div>
+    </div>
+    
+  </body>
+</html>
